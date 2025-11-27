@@ -1,4 +1,5 @@
 # car_type_-Classification_Description
+### dataset link: https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset?select=cars_test
 ### Member 1: The Data Engineer & ResNet Lead
 
     Primary Responsibility: Data Pipeline & ResNet Implementation.
