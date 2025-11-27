@@ -3,8 +3,8 @@
 ### saved model link gonna be put on this link due to github limitation size: https://drive.google.com/drive/folders/1-lZsxBfCmf6MAEy1coy-Hb7CUrAaT2hy?usp=sharing
 @@@ task distribution :
 ### Member 1: The Data Engineer & ResNet Lead
-|--->Done by : Malak Alaa Mohamed --->
-    Primary Responsibility: Data Pipeline & ResNet Implementation.
+|--->Done by : Malak Alaa Mohamed       
+--->Primary Responsibility: Data Pipeline & ResNet Implementation.
 
     Technical Tasks:
 
