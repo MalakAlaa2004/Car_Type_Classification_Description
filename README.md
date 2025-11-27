@@ -3,7 +3,7 @@
 ### saved model link gonna be put on this link due to github limitation size: https://drive.google.com/drive/folders/1-lZsxBfCmf6MAEy1coy-Hb7CUrAaT2hy?usp=sharing
 @@@ task distribution :
 ### Member 1: The Data Engineer & ResNet Lead
-|--->Done by : Malak Alaa Mohamed 
+|--->Done by : Malak Alaa Mohamed --->
     Primary Responsibility: Data Pipeline & ResNet Implementation.
 
     Technical Tasks:
@@ -16,8 +16,8 @@
 
     Documentation: Write the "Data Preprocessing" section and the "ResNet Architecture & Results" section (including referencing the He et al. paper).
 ### Member 2: The Architect (VGG-19 From Scratch)
-|---> Done by :
-    Primary Responsibility: Building VGG-19 from the ground up.
+|---> Done by :           
+   ---> Primary Responsibility: Building VGG-19 from the ground up.
 
     Technical Tasks:
 
@@ -28,7 +28,7 @@
     Documentation: Write the "VGG-19 Architecture" section, explaining the stack of 3×3 filters, and the Pros/Cons of deep plain networks.
 
 ### Member 3: The Multi-Model Specialist (Inception & MobileNet/ViT)
-|--->Done by :
+|--->Done by :         
     Primary Responsibility: Transfer Learning for Inception and the 4th Model.
 
     Technical Tasks:
@@ -40,8 +40,8 @@
     Documentation: Write the sections for "Inception V1" (Inception modules) and the chosen 4th model. Explain the concept of Transfer Learning in the report.
 
 ### Member 4: The Evaluation Lead
-|--->Done by : 
-    Primary Responsibility: Metrics Logic & Scoring.
+|--->Done by :         
+ --->   Primary Responsibility: Metrics Logic & Scoring.
 
     Technical Tasks:
 
@@ -56,8 +56,8 @@
     Documentation: Write the "Evaluation Methodology" section, defining the formulas for all metrics used.
 
 ### Member 5: The Visualization Expert
-|--->Done by :
-    Primary Responsibility: Visualizing Results & Performance.
+|--->Done by :        
+  --->Primary Responsibility: Visualizing Results & Performance.
 
     Technical Tasks:
 
@@ -70,8 +70,8 @@
     Documentation: Generate all figures for the final report and write the "Comparative Analysis" section (interpreting the graphs).
 
 ### Member 6: The Research Lead & Integrator
-|--->Done by:
-    Primary Responsibility: Literature Review, Documentation compilation, and formatting.
+|--->Done by:             
+  --->Primary Responsibility: Literature Review, Documentation compilation, and formatting.
 
     Technical Tasks:
 
