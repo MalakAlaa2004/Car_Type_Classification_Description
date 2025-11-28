@@ -56,7 +56,7 @@
     Documentation: Write the "Evaluation Methodology" section, defining the formulas for all metrics used.
 
 ### Member 5: The Visualization Expert
-|--->Done by :   Rawan Hicham
+|--->Done by :   Rawan Hicham          
   --->Primary Responsibility: Visualizing Results & Performance.
 
     Technical Tasks:
