@@ -16,7 +16,7 @@
 
     Documentation: Write the "Data Preprocessing" section and the "ResNet Architecture & Results" section (including referencing the He et al. paper).
 ### Member 2: The Architect (VGG-19 From Scratch)
-|---> Done by :           
+|---> Done by :karim ehab      
    ---> Primary Responsibility: Building VGG-19 from the ground up.
 
     Technical Tasks:
@@ -28,7 +28,7 @@
     Documentation: Write the "VGG-19 Architecture" section, explaining the stack of 3×3 filters, and the Pros/Cons of deep plain networks.
 
 ### Member 3: The Multi-Model Specialist (Inception & MobileNet/ViT)
-|--->Done by :         
+|--->Done by :   Omar Wagih      
     Primary Responsibility: Transfer Learning for Inception and the 4th Model.
 
     Technical Tasks:
@@ -43,7 +43,7 @@
 |--->Done by :         
  --->   Primary Responsibility: Metrics Logic & Scoring.
 
-    Technical Tasks:
+    Technical Tasks: Ali Achraf
 
         Evaluation Script: Write a robust Python script that takes any of the 4 trained models and calculates:
 
@@ -56,7 +56,7 @@
     Documentation: Write the "Evaluation Methodology" section, defining the formulas for all metrics used.
 
 ### Member 5: The Visualization Expert
-|--->Done by :        
+|--->Done by :   Rawan Hicham
   --->Primary Responsibility: Visualizing Results & Performance.
 
     Technical Tasks:
@@ -70,7 +70,7 @@
     Documentation: Generate all figures for the final report and write the "Comparative Analysis" section (interpreting the graphs).
 
 ### Member 6: The Research Lead & Integrator
-|--->Done by:             
+|--->Done by:   Omar Attia              
   --->Primary Responsibility: Literature Review, Documentation compilation, and formatting.
 
     Technical Tasks:
