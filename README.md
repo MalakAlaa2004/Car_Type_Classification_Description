@@ -40,10 +40,10 @@
     Documentation: Write the sections for "Inception V1" (Inception modules) and the chosen 4th model. Explain the concept of Transfer Learning in the report.
 
 ### Member 4: The Evaluation Lead
-|--->Done by :         
+|--->Done by :    Ali Achraf     
  --->   Primary Responsibility: Metrics Logic & Scoring.
 
-    Technical Tasks: Ali Achraf
+    Technical Tasks:
 
         Evaluation Script: Write a robust Python script that takes any of the 4 trained models and calculates:
 
