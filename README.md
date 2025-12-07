@@ -1,5 +1,5 @@
 # car_type_-Classification_Description
-### dataset link: https://www.kaggle.com/datasets/eduardo4jesus/stanford-cars-dataset?select=cars_test
+### dataset link: https://huggingface.co/datasets/tanganke/stanford_cars
 ### saved model link gonna be put on this link due to github limitation size: https://drive.google.com/drive/folders/1-lZsxBfCmf6MAEy1coy-Hb7CUrAaT2hy?usp=sharing
 ### ***task distribution :***
 ### Member 1: The Data Engineer & ResNet Lead
