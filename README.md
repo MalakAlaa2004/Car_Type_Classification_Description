@@ -36,20 +36,6 @@ Four distinct models were selected to represent different architectural philosop
 
 The models were evaluated across three complexity levels (10, 20, and 196 classes). The **ResNet-50** model, leveraging deep residual learning and ImageNet pre-trained weights, achieved the highest performance on the full dataset.
 
----
-
-## 💾 Model Weights and Checkpoints
-
-The trained model weights and checkpoints for all four architectures (ResNet-50, VGG-19, Inception V1, and MobileNetV2) are too large to host directly on GitHub.
-
-They have been securely uploaded and are available for download via the following Google Drive link:
-
-**[Download All Model Checkpoints](https://drive.google.com/drive/folders/1-lZsxBfCmf6MAEy1coy-Hb7CUrAaT2hy )**
-
-*Note: These weights are necessary to run the final evaluation scripts (`Evaluation_XXX_classes.py`) and reproduce the results presented in the documentation.*
-
----
-
 ### Performance on 196 Classes (Full Dataset)
 
 | Model | Accuracy | F1-Score (Macro) | AUC (Macro) |
@@ -64,6 +50,19 @@ They have been securely uploaded and are available for download via the followin
 The superior performance of **ResNet-50** is attributed to its robust ability to learn highly discriminative features for fine-grained classification, demonstrating excellent scalability and stability as the number of classes increases.
 
 ---
+
+## 💾 Model Weights and Checkpoints
+
+The trained model weights and checkpoints for all four architectures (ResNet-50, VGG-19, Inception V1, and MobileNetV2) are too large to host directly on GitHub.
+
+They have been securely uploaded and are available for download via the following Google Drive link:
+
+**[Download All Model Checkpoints](https://drive.google.com/drive/folders/1-lZsxBfCmf6MAEy1coy-Hb7CUrAaT2hy )**
+
+*Note: These weights are necessary to run the final evaluation scripts (`Evaluation_XXX_classes.py`) and reproduce the results presented in the documentation.*
+
+---
+
 
 ## 📁 Repository Structure
 
