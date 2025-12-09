@@ -48,7 +48,7 @@ The superior performance of **ResNet-50** is attributed to its robust ability to
 The project is organized into modular directories based on the classification complexity, ensuring clear separation of code and results.
 
 ```
-/car_type_Classification_Description/
+/Car_Type_Classification_Description/
 ├── 196_classes/
 │   ├── Data Preprocessing_196_classes.py  # Data loading, augmentation, and splitting
 │   ├── VGG-19_196_classes.ipynb          # VGG-19 (from scratch) training notebook
@@ -61,6 +61,7 @@ The project is organized into modular directories based on the classification co
 ├── 10_classes/                           # Code and results for the 10-class subset
 ├── Car_Classification_Documentation.pdf  # The comprehensive academic report (Final Deliverable)
 ├── Project Requirements/                 # Original project requirement documents
+└── requirements.txt                      # Project dependencies for environment setup
 └── README.md                             # This file
 ```
 
