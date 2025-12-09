@@ -79,7 +79,7 @@ The project is organized into modular directories based on the classification co
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/MalakAlaa2004/car_type_Classification_Description.git
+    git clone https://github.com/MalakAlaa2004/Car_Type_Classification_Description.git
     cd car_type_Classification_Description
     ```
 
