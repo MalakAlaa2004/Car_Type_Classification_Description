@@ -79,7 +79,7 @@ The project is organized into modular directories based on the classification co
 
 1.  **Clone the repository:**
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
+    git clone https://github.com/MalakAlaa2004/car_type_Classification_Description.git
     cd car_type_Classification_Description
     ```
 
@@ -107,4 +107,4 @@ The project uses Jupyter Notebooks for training and a dedicated script for final
 For a detailed breakdown of the methodology, architectural explanations (with diagrams and citations), in-depth comparative analysis, and discussion on the 10-class and 20-class trials, please refer to the final academic report:
 
 *   **[Car_Classification_Documentation.pdf](Car_Classification_Documentation.pdf)**
-    *   *Note: This file is the comprehensive, professional PDF generated for the final submission.*
+
