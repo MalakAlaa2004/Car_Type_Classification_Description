@@ -1,0 +1,20 @@
+# Core Deep Learning Frameworks
+torch
+torchvision
+
+# Data Handling and Preprocessing
+numpy
+pandas
+Pillow
+
+# Dataset Management (Hugging Face)
+datasets
+
+# Evaluation and Visualization
+scikit-learn
+matplotlib
+seaborn
+
+# Other Utilities (if needed for notebooks)
+tqdm
+ipywidgets
