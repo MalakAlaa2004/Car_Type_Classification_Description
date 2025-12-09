@@ -61,7 +61,7 @@ The repository is organized to clearly separate the code, data preprocessing, an
 │   └── Evaluation Results_196_classes/   # All output metrics, confusion matrices, and plots
 ├── 20_classes/                           # Code and results for the 20-class subset
 ├── 10_classes/                           # Code and results for the 10-class subset
-├── Project_Documentation_Updated.md      # The comprehensive academic report
+├── Project_Documentation_Updated.pdf      # The comprehensive academic report
 └── README.md                             # This file
 ```
 
@@ -109,4 +109,4 @@ All generated results, including the final comparison tables and plots, will be 
 
 For a detailed breakdown of the methodology, data preprocessing, architectural explanations (with diagrams), and in-depth comparative analysis, please refer to the full academic report:
 
-*   **[Project_Documentation_Updated.md](Project_Documentation_Updated.md)**
+*   **[Project_Documentation_Updated.pdf](Project_Documentation_Updated.pdf)**
