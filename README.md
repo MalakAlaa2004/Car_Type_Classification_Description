@@ -87,7 +87,6 @@ The project is organized into modular directories based on the classification co
     ```bash
     pip install -r requirements.txt
     ```
-    *(Note: Ensure a `requirements.txt` file is present in the root directory listing all dependencies.)*
 
 ### Running the Code
 
