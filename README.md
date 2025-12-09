@@ -1,82 +1,118 @@
-# car_type_-Classification_Description
-### dataset link: https://huggingface.co/datasets/tanganke/stanford_cars
-### saved model link gonna be put on this link due to github limitation size: https://drive.google.com/drive/folders/1-lZsxBfCmf6MAEy1coy-Hb7CUrAaT2hy?usp=sharing
-### ***task distribution :***
-### Member 1: The Data Engineer & ResNet Lead
-|--->Done by : Malak Alaa Mohamed       
---->Primary Responsibility: Data Pipeline & ResNet Implementation.
+# 🚗 Fine-Grained Car Classification with Deep Learning
 
-    Technical Tasks:
+## 🌟 Project Overview
 
-        Data Preparation: Download Stanford Cars dataset. Write scripts for data cleaning, resizing (e.g., 224x224), and normalization.
+This repository presents a comprehensive deep learning solution for **Fine-Grained Car Type Classification** using the challenging **Stanford Cars Dataset**. The core objective is to accurately distinguish between 196 visually similar car makes and models (e.g., different trims or model years), a task that demands highly discriminative feature extraction.
 
-        Data Splitting: Create the standard Train/Validation/Test split.
+The project implements and rigorously evaluates four state-of-the-art Convolutional Neural Network (CNN) architectures to compare their performance, scalability, and efficiency on this complex fine-grained task.
 
-        Model Implementation: Implement ResNet (Pre-trained) using Transfer Learning. Freeze base layers, modify the fully connected head for 196 classes, and fine-tune.
+![Model Performance Comparison](https://private-us-east-1.manuscdn.com/sessionFile/TWR0UrijfBZrf1gzu3tpZb/sandbox/67WrMbnzH8rpKSrmnGV9bq-images_1765305921113_na1fn_L2hvbWUvdWJ1bnR1L2Nhcl9jbGFzc2lmaWNhdGlvbl9wcm9qZWN0L2RvY3VtZW50YXRpb25fZGlhZ3JhbXMvY29tcGFyaXNvbl8xOTZfY2xhc3Nlcw.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVFdSMFVyaWpmQlpyZjFnenUzdHBaYi9zYW5kYm94LzY3V3JNYm56SDhycEtTcm1uR1Y5YnEtaW1hZ2VzXzE3NjUzMDU5MjExMTNfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTmhjbDlqYkdGemMybG1hV05oZEdsdmJsOXdjbTlxWldOMEwyUnZZM1Z0Wlc1MFlYUnBiMjVmWkdsaFozSmhiWE12WTI5dGNHRnlhWE52Ymw4eE9UWmZZMnhoYzNObGN3LnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=HUnG25WVCjv2mLHYAVW1TBhsJli~kSsmVQooiu6bS06W-iFWD51Q8oAEKLFRE2hwdWA1kBcuioSYVOAUj8KZBwAqpuFPC4-u27I6BS~sUa~rgmhxwIDQFfK9Ef673UfmcyHmjLTBfLSsXmd9AoojYMil8-k3mslgKgDd2auoUnIydVD4tTMNZntC9ckArxSifAuq8SlsJXcuSpa2pn0jwEfmzlqn9LQ7pgDc~Ee~s3Y4YUojnhaM~diMPsVCInOq6ljJ9JpDO6o6zJurTVUuiR02tGMPW1UxBnBWC7Q9kQxmuvG5QkbYh5VG8Dd8WmKEXjmZD8ry12Wma7bCS0L~Dg__)
+*Figure: Comparative performance of the four models on the full 196-class dataset. ResNet-50 shows clear superiority.*
 
-    Documentation: Write the "Data Preprocessing" section and the "ResNet Architecture & Results" section (including referencing the He et al. paper).
-### Member 2: The Architect (VGG-19 From Scratch)
-|---> Done by :karim ehab      
-   ---> Primary Responsibility: Building VGG-19 from the ground up.
 
-    Technical Tasks:
+### Dataset
 
-        VGG-19 Implementation: Code the entire VGG-19 architecture layer-by-layer (Conv blocks, MaxPool, FC layers) without using torchvision.models or applications.VGG19.
+*   **Name:** Stanford Cars Dataset
+*   **Source:** [Hugging Face Dataset Link](https://huggingface.co/datasets/tanganke/stanford_cars)
+*   **Classes:** 196 unique car makes and models.
+*   **Total Images:** 16,185 (8,144 training, 8,041 testing).
 
-        Training: Train this model from random initialization. Note: This requires significant GPU time and careful hyperparameter tuning (learning rate scheduling) to avoid vanishing gradients.
+---
 
-    Documentation: Write the "VGG-19 Architecture" section, explaining the stack of 3×3 filters, and the Pros/Cons of deep plain networks.
+## 🧠 Model Architectures Implemented
 
-### Member 3: The Multi-Model Specialist (Inception & MobileNet/ViT)
-|--->Done by :   Omar Wagih      
-    Primary Responsibility: Transfer Learning for Inception and the 4th Model.
+Four distinct models were selected to represent different architectural philosophies and implementation strategies:
 
-    Technical Tasks:
+| Model | Implementation Strategy | Key Architectural Feature |
+| :--- | :--- | :--- |
+| **ResNet-50** | **Transfer Learning** (Fine-Tuning) | Residual Blocks (Skip Connections) to enable deep learning. |
+| **Inception V1 (GoogLeNet)** | **Transfer Learning** (Fine-Tuning) | Inception Modules for multi-scale feature extraction. |
+| **MobileNetV2** | **Transfer Learning** (Fine-Tuning) | Inverted Residual Blocks for high efficiency and low latency. |
+| **VGG-19** | Implemented **from scratch** with Batch Normalization. | Uniform 3x3 convolutional filters to test depth importance. |
 
-        Inception V1: Implement Transfer Learning on Inception V1 (GoogLeNet). Handle the auxiliary classifiers if present in the pre-trained version.
+---
 
-        Model 4 Choice: Implement Vision Transformer (ViT) (Recommended for high performance) OR MobileNet (Recommended if compute resources are low). Use Transfer Learning.
+## 📊 Key Results and Comparative Analysis
 
-    Documentation: Write the sections for "Inception V1" (Inception modules) and the chosen 4th model. Explain the concept of Transfer Learning in the report.
+The models were evaluated across three complexity levels (10, 20, and 196 classes). The **ResNet-50** model, leveraging deep residual learning and ImageNet pre-trained weights, achieved the highest performance on the full dataset.
 
-### Member 4: The Evaluation Lead
-|--->Done by :    Ali Achraf     
- --->   Primary Responsibility: Metrics Logic & Scoring.
+### Performance on 196 Classes (Full Dataset)
 
-    Technical Tasks:
+| Model | Accuracy | F1-Score (Macro) | AUC (Macro) |
+| :--- | :--- | :--- | :--- |
+| **ResNet-50** | **84.06%** | **83.98%** | **99.84%** |
+| MobileNetV2 | 63.82% | 63.82% | 99.22% |
+| VGG-19 (Scratch) | 46.81% | 46.68% | 98.03% |
+| Inception V1 | 38.49% | 38.62% | 96.49% |
 
-        Evaluation Script: Write a robust Python script that takes any of the 4 trained models and calculates:
+### Conclusion
 
-            Accuracy (Top-1 and Top-5).
+The superior performance of **ResNet-50** is attributed to its robust ability to learn highly discriminative features for fine-grained classification, demonstrating excellent scalability and stability as the number of classes increases.
 
-            Precision, Recall, and F1​-Score (Macro-averaged due to class imbalance).
+---
 
-        ROC/AUC: Implement the logic to calculate the AUC and generate the data points for ROC curves for multi-class classification (One-vs-Rest approach).
+## 📁 Repository Structure
 
-    Documentation: Write the "Evaluation Methodology" section, defining the formulas for all metrics used.
+The project is organized into modular directories based on the classification complexity, ensuring clear separation of code and results.
 
-### Member 5: The Visualization Expert
-|--->Done by :   Rawan Hicham          
-  --->Primary Responsibility: Visualizing Results & Performance.
+```
+/Car_Type_Classification_Description/
+├── 196_classes/
+│   ├── Data Preprocessing_196_classes.py  # Data loading, augmentation, and splitting
+│   ├── VGG-19_196_classes.ipynb          # VGG-19 (from scratch) training notebook
+│   ├── ResNet_196_classes.ipynb          # ResNet-50 (transfer learning) training notebook
+│   ├── InceptionV1_196_classes.ipynb     # Inception V1 (transfer learning) training notebook
+│   ├── MobileNetV2_196_classes.ipynb     # MobileNetV2 (transfer learning) training notebook
+│   ├── Evaluation_196_classes.py         # Script to generate all metrics and visualizations
+│   └── Evaluation Results_196_classes/   # All output metrics, confusion matrices, and plots
+├── 20_classes/                           # Code and results for the 20-class subset
+├── 10_classes/                           # Code and results for the 10-class subset
+├── Car_Classification_Documentation.pdf  # The comprehensive academic report (Final Deliverable)
+├── Project Requirements/                 # Original project requirement documents
+└── requirements.txt                      # Project dependencies for environment setup
+└── README.md                             # This file
+```
 
-    Technical Tasks:
+---
 
-        Confusion Matrix: Create detailed heatmaps of the Confusion Matrices (focusing on the most confused classes).
+## 🚀 Setup and Execution
 
-        ROC Curves: Plot the ROC curves generated by Member 4's data.
+### Prerequisites
 
-        Training Graphs: Plot Loss vs. Epoch and Accuracy vs. Epoch for all 4 models on one comparative graph.
+*   Python 3.8+
+*   PyTorch & Torchvision
+*   Hugging Face `datasets` library
+*   Standard scientific computing libraries (`pandas`, `numpy`, `matplotlib`, `scikit-learn`)
 
-    Documentation: Generate all figures for the final report and write the "Comparative Analysis" section (interpreting the graphs).
+### Installation
 
-### Member 6: The Research Lead & Integrator
-|--->Done by:   Omar Attia              
-  --->Primary Responsibility: Literature Review, Documentation compilation, and formatting.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/MalakAlaa2004/Car_Type_Classification_Description.git
+    cd car_type_Classification_Description
+    ```
 
-    Technical Tasks:
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-        Literature Review: Locate and summarize the 4 original papers (references below).
+### Running the Code
 
-        Pros & Cons: Aggregate the pros/cons for each architecture based on the team's findings (e.g., VGG is heavy, MobileNet is fast, ViT is data-hungry).
+The project uses Jupyter Notebooks for training and a dedicated script for final evaluation.
 
-        Final Report: Compile all sections from members into the final document/PDF. Ensure consistent formatting, bibliography, and introduction/conclusion.
+1.  **Training:** Open and execute the desired training notebook (e.g., `196_classes/ResNet_196_classes.ipynb`) to train the model and save the weights.
+2.  **Evaluation:** Run the evaluation script to generate all final metrics and visualizations:
+    ```bash
+    python 196_classes/Evaluation_196_classes.py
+    ```
+    All generated results are saved in the respective `Evaluation Results_XXX_classes` directory.
+
+---
+
+## 📝 Full Academic Documentation
+
+For a detailed breakdown of the methodology, architectural explanations (with diagrams and citations), in-depth comparative analysis, and discussion on the 10-class and 20-class trials, please refer to the final academic report:
+
+*   **[Car_Classification_Documentation.pdf](Car_Classification_Documentation.pdf)**
+

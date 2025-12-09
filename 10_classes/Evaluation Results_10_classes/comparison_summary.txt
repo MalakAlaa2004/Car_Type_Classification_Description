@@ -1,0 +1,59 @@
+============================================================
+MODEL COMPARISON SUMMARY
+============================================================
+
+Evaluation Date: 2025-12-09 02:10:36
+Number of Classes: 10
+Number of Models: 4
+Models Evaluated: ResNet50, VGG19 (Scratch), Inception V1, MobileNetV2
+Evaluation Split: test
+
+PERFORMANCE METRICS:
+------------------------------------------------------------
+          Model  accuracy  precision_macro  recall_macro  fscore_macro  auc_micro  auc_macro
+       ResNet50  0.903941         0.908228      0.905783      0.903937   0.993503   0.994810
+VGG19 (Scratch)  0.165025         0.082902      0.157413      0.079181   0.580217   0.601921
+   Inception V1  0.881773         0.893703      0.883105      0.885073   0.993658   0.994040
+    MobileNetV2  0.812808         0.824487      0.814351      0.815510   0.980250   0.980999
+
+BEST MODEL PER METRIC:
+------------------------------------------------------------
+Accuracy: ResNet50 (90.39%)
+Precision Macro: ResNet50 (90.82%)
+Recall Macro: ResNet50 (90.58%)
+Fscore Macro: ResNet50 (90.39%)
+Auc Micro: Inception V1 (99.37%)
+Auc Macro: ResNet50 (99.48%)
+
+============================================================
+ARCHITECTURE ANALYSIS
+============================================================
+
+
+ResNet50:
+  Description: Deep residual network with 50 layers
+  Image Size: 224
+  Accuracy: 90.39%
+  F1-Score (Macro): 90.39%
+  AUC (Macro): 99.48%
+
+VGG19 (Scratch):
+  Description: VGG-19 trained from scratch with BatchNorm
+  Image Size: 224
+  Accuracy: 16.50%
+  F1-Score (Macro): 7.92%
+  AUC (Macro): 60.19%
+
+Inception V1:
+  Description: GoogLeNet with inception modules
+  Image Size: 299
+  Accuracy: 88.18%
+  F1-Score (Macro): 88.51%
+  AUC (Macro): 99.40%
+
+MobileNetV2:
+  Description: Lightweight mobile architecture
+  Image Size: 224
+  Accuracy: 81.28%
+  F1-Score (Macro): 81.55%
+  AUC (Macro): 98.10%
